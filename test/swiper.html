@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>Swiper</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/swiper.css" />
+
+	<script type="text/javascript" src="../src/lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../src/swiper.js"></script>
+</head>
+<body>
+	<!-- 测试swiper组件运行效果 -->
+	
+	<div class="x_swiper_container">
+		<div class="x_swiper_wrapper">
+			<div class="x_swiper_slide red_slide">Demo1</div>
+			<div class="x_swiper_slide black_slide">Demo2</div>
+			<div class="x_swiper_slide blue_slide">Demo3</div>
+		</div>
+		<div class="x_swiper_index">
+			<a href="javascript:;" class="x_active"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+		</div>
+	</div>
+	
+
+	<script type="text/javascript">
+		var swiper = new Swiper('.x_swiper_container',{
+			autoPlay : true,
+			autoTime : 2000,
+			slideSpeed : 1.2
+		});
+	</script>
+</body>
+</html>

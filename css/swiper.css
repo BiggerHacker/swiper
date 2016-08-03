@@ -1,0 +1,60 @@
+/* 测试swiper组件样式 */
+@charset "utf-8";
+html,body,div,nav,a{margin:0;padding:0;}
+a{text-decoration:none;}
+body {font-family:Arial,"微软雅黑";}
+
+.red_slide {
+	background:#f00;
+}
+.black_slide {
+	background:#000;
+}
+.blue_slide {
+	background:#00f;
+}
+
+.x_swiper_container {
+	width:100%;
+	height:100px;
+	position:relative;
+	overflow:hidden;
+}
+.x_swiper_wrapper {
+	width:300%;
+	height:100px;
+	position:absolute;
+	left:0;
+	top:0;
+	overflow:hidden;
+	  /*transform:translateX(-320px); */
+}
+.x_swiper_slide {
+	width:33.33%;
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	color:#fff;
+	font-size:26px;
+	font-weight:bold;
+	float:left;
+}
+.x_swiper_index {
+	width:100%;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.x_swiper_index a {
+	display:inline-block;
+	width:10px;
+	height:10px;
+	border-radius:5px;
+	background:rgba(255,255,255,.6);
+}
+.x_swiper_index a.x_active {
+	background:#fff;
+}
