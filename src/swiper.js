@@ -7,7 +7,7 @@
  * 
  * email：1049025971@qq.com
  * 
- * 更新时间：2016-08-02
+ * 更新时间：2016-08-05
  */
 
 
@@ -86,7 +86,9 @@ Swiper Component-------------
 				_this.options.initialSlide = _this.slide.length - 1;
 			}
 			autoPlay(0.2);
-			auto();
+			if(configs !== undefined && _this.options.autoPlay ){
+				auto();
+			}
 		})
 
 		/* settings slideSize */
